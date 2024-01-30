@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0% 5%;
+    box-sizing: border-box;
+}
+
+html, body{
+    width:100%;
+    caret-color: transparent;
+    font-size: 1em;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#imagepane{
+  display: flex;
+  width:100%;
+  padding: 0;
+}
+
+div.imagebox{
+  border: solid;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.5%;
+  margin: 0 0;
+  background-color: #EEEEEE;
+}
+
+div.details{
+  border: solid;
+  position: absolute;
+  display: flex-align;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1%;
+  margin: 0 0;
+  background-color: #DDDDDD;  
+}
+
+div.hidebottompane{
+  position: absolute;
+  background-color: #FFFFFF;
+  pointer-events: none; 
+}
+
+img.thumbnail{
+  position: relative;
+  width:100%;
+  height:100%;
+  padding: 0 0;
+  margin: 0 0;
+  object-fit: contain;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+div.textbox{
+  display: table;
+  position: relative;
+  padding: 0 0;
+  margin: 0 0;
+  user-select: none; 
+  text-align: center; 
+  pointer-events: none;
+}
+
+h3.text{
+  display:table-cell;
+  vertical-align:middle; 
+  width: 100%;
+  height: 100%;
+}
+
+.backicon{
+  position: absolute;
+  display: flex;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+img.backimg{
+  position: relative;
+  width:100%;
+  height:100%;
+  padding: 0 0;
+  margin: 0 0;
+  object-fit: contain;
+  -webkit-user-drag: none;
+}
+
+@media screen and (min-width: 400px) {
+  #imagepane{
+    max-width: 400px;
+  }
+}

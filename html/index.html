@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<meta http-equiv="content-language" content="ja"> -->
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="./css/style.css">
+
+<title></title>
+</head>
+<body oncontextmenu="return false;">
+
+<h1>NaRaT</h1>
+
+<div id="imagepane" style="border: None;">
+	<div id="imagebox1" class="imagebox draggy">
+	    <div style="display: flex; width: 100%; height: 100%; padding:0; margin:0; pointer-events: none;">
+			<div class="textbox " style="width:50%;">
+				<h3 class="text">Title</h3>
+			</div>
+			<div style="width:50%; height:100%; padding:0; margin:0;">
+				<img src="arttra.webp" class="thumbnail" alt="No image">
+			</div>
+		</div>
+	</div>
+	<div id="imagebox2" class="imagebox draggy">
+	    <div style="display: flex-align; width:100%; height:100%; padding:0; margin:0; pointer-events: none;">
+			<div class="textbox" style="width:100%; height:50%;">
+				<h3 style="width:100%; height:100%; " class="text">Title</h3>
+			</div>
+			<div style="width:100%; height:50%; padding:0; margin:0;">
+				<img src="arttra.webp" class="thumbnail" alt="No image">
+			</div>
+		</div>
+	</div>
+	<div id="imagebox3" class="imagebox draggy">
+	    <div style="display: flex-align; width:100%; height:100%; padding:0; margin:0; pointer-events: none;">
+			<div class="textbox" style="width:100%; height:50%;">
+				<h3 style="width:100%; height:100%; " class="text">Title</h3>
+			</div>
+			<div style="width:100%; height:50%; padding:0; margin:0;">
+				<img src="arttra.webp" class="thumbnail" alt="No image">
+			</div>
+		</div>	
+	</div>
+	<div id="imagebox4" class="imagebox draggy">
+	    <div style="display: flex; width: 100%; height: 100%; padding:0; margin:0; pointer-events: none;">
+			<div class="textbox" style="width:50%; height:100%;">
+				<h3 class="text">Title</h3>
+			</div>
+			<div style="width:50%; height:100%; padding:0; margin:0;">
+				<img src="arttra.webp" class="thumbnail" alt="No image">
+			</div>
+		</div>
+	</div>
+
+	<div id="imagebox0" class="imagebox droppy">
+		<div style="width:100%; height:100%; padding:0; margin:0;">
+			<img src="dragdrop.png" class="thumbnail" alt="No image">
+		</div>
+	</div>
+
+	<div id="backicon" class="backicon">
+		<div style="width:100%; height:100%; padding:0; margin:0;">
+			<img src="back.png" class="backimg" alt="No image" hidden>
+		</div>
+	</div>
+
+	<div id="imagebox5" class="imagebox draggy">
+		<div style="width:100%; height:100%; padding:0; margin:0; pointer-events: none;">
+			<img src="arttra.webp" class="thumbnail" alt="No image">
+		</div>
+	</div>
+
+	<div id="imagebox6" class="imagebox draggy">
+		<div style="width:100%; height:100%; padding:0; margin:0; pointer-events: none;">
+			<img src="arttra.webp" class="thumbnail" alt="No image">
+		</div>
+	</div>
+
+	<div id="imagebox7" class="imagebox draggy">
+		<div style="width:100%; height:100%; padding:0; margin:0; pointer-events: none;">
+			<img src="arttra.webp" class="thumbnail" alt="No image">
+		</div>
+	</div>
+
+	<div id="hidebottompane" class="hidebottompane">
+	</div>
+
+	<div id="details" class="details" hidden>
+		<!--
+	    <div style="display: flex; width: 100%; height: 20%;">
+			<div style="width:50%; height:100%; padding:0; margin:0;">
+				<img src="arttra.webp" class="thumbnail" alt="No image">
+			</div>
+			<div class="textbox" style="width:50%; height:100%;">
+				<h3 class="text" id="title">Title</h3>
+			</div>
+		</div>
+	    <div style="display: flex; width: 100%; height: 80%; padding: 5%;">
+			<div class="textbox" style="width:100%; height:100%; text-align: justify;">
+				<p class="text" id="text">Text</p>
+			</div>
+		</div>
+		-->
+		<div class="textbox" style="width:100%;">
+			<h3 class="text" id="title">Title</h3>
+		</div>
+	    <div style="display: flex-algin; width: 100%; padding: 0;">
+			<div class="textbox" style="text-align: justify;">
+				<img src="arttra.webp" class="thumbnail" alt="No image" align="right" style="height:30%; width: 50%; padding:0; margin:3%;">
+				<p class="text" id="text">Text</p>
+			</div>
+			<br>
+			<div style="text-align: center; width: 100%; padding: 0;">
+				<a href="" id="link" target="_blank">Link</a>
+				<h3 class="text" id="relation" style="display: block;"></h3>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="./js/out.js"></script>
+<script src="./js/dynamicheight.js">></script>
+<script src="./js/dragdrop.js"></script>
+
+</body>
+</html>
