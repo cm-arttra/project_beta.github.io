@@ -1,4 +1,4 @@
-
+// https://qiita.com/sueasen/items/2a39e709ffac6ff041f5
 
 var searched = false;
 var searching = -1;
