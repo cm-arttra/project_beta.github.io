@@ -22,6 +22,8 @@ var detailpane_title = detailpane.querySelector('#title');
 var detailpane_text = detailpane.querySelector('#text');
 var detailpane_img = detailpane.querySelector('.thumbnail');
 var detailpane_link = detailpane.querySelector('#link');
+var detailpane_ref = detailpane.querySelector('#reference');
+var detailpane_date = detailpane.querySelector('#date');
 var detailpane_rel = detailpane.querySelector('#relation');
 detailpane.addEventListener("click", HideDetailPane);
 detailpane.hidden = true;
@@ -149,6 +151,8 @@ function DisplayDetailPane(event) {
                 //detailpane_text.innerHTML = data[clicked_index]["text"]
                 detailpane_img.src = data[clicked_index]["image"]
                 detailpane_link.href = data[clicked_index]["link"]
+                detailpane_ref.innerHTML = data[clicked_index]["reference"]
+                detailpane_date.innerHTML = data[clicked_index]["date"]
                 detailpane_rel.innerHTML = ""
 
                 if (data[clicked_index]["text"].length > max_strlen_title){
@@ -167,6 +171,8 @@ function DisplayDetailPane(event) {
                 //detailpane_text.innerHTML = data[searching]["results"][clicked_index]["text"]
                 detailpane_img.src = data[searching]["results"][clicked_index]["image"]
                 detailpane_link.href = data[searching]["results"][clicked_index]["link"]
+                detailpane_ref.innerHTML = data[searching]["results"][clicked_index]["reference"]
+                detailpane_date.innerHTML = data[searching]["results"][clicked_index]["date"]
                 detailpane_rel.innerHTML = data[searching]["results"][clicked_index]["relation"]
                 
                 if (data[searching]["results"][clicked_index]["text"].length > max_strlen_title){
