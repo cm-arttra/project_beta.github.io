@@ -1,19 +1,21 @@
 *{
     margin: 0;
-    padding: 0% 5%;
+    padding: 0% 1%;
     box-sizing: border-box;
 }
 
 html, body{
     width:100%;
     caret-color: transparent;
-    font-size: 1em;
+    font-size: 0.9em;
+    font-family: "Arial";//, "メイリオ";
+
 }
 
 body{
     background-color: white;
     display: flex;
-    justify-content: center;
+    //justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -31,9 +33,10 @@ div.imagebox{
   align-items: center;
   text-align: center;
   border-radius: 10px;
+  border-width: 1px;
   padding: 0.5%;
   margin: 0 0;
-  background-color: #EEEEEE;
+  background-color: #D8D8D8;  
 }
 
 div.details{
@@ -42,14 +45,23 @@ div.details{
   display: flex-align;
   align-items: center;
   text-align: center;
+  border-width: 1px;
   border-radius: 10px;
   padding: 1%;
   margin: 0 0;
-  background-color: #DDDDDD;  
+  background-color: #D8D8D8;  
 }
 
 div.hidebottompane{
   position: absolute;
+  background-color: #FFFFFF;
+  pointer-events: none; 
+}
+
+div.hideallpane{
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-color: #FFFFFF;
   pointer-events: none; 
 }
@@ -71,13 +83,15 @@ div.textbox{
   padding: 0 0;
   margin: 0 0;
   user-select: none; 
-  text-align: center; 
+  //text-align: center;
+  text-align: left; 
   pointer-events: none;
 }
 
 h3.text{
   display:table-cell;
-  vertical-align:middle; 
+  //vertical-align:middle; 
+  vertical-align:top;
   width: 100%;
   height: 100%;
 }
@@ -97,6 +111,15 @@ img.backimg{
   margin: 0 0;
   object-fit: contain;
   -webkit-user-drag: none;
+}
+
+.displaybutton{
+  width: 6em;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0.5em;
+  margin: 0 5%;
+  color: black;
 }
 
 @media screen and (min-width: 400px) {

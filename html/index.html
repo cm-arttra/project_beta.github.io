@@ -4,7 +4,6 @@
 <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--<meta http-equiv="content-language" content="ja"> -->
-<meta name="robots" content="noindex">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="./css/style.css">
 
@@ -12,7 +11,9 @@
 </head>
 <body oncontextmenu="return false;">
 
-<h1>NaRaT</h1>
+<div style="height: 2em;"></div>
+<h1 style="font-size: 3em;">marumado</h1>
+<div style="height: 2em;"></div>
 
 <div id="imagepane" style="border: None;">
 	<div id="imagebox1" class="imagebox draggy">
@@ -21,7 +22,7 @@
 				<h3 class="text">Title</h3>
 			</div>
 			<div style="width:50%; height:100%; padding:0; margin:0;">
-				<img src="arttra.webp" class="thumbnail" alt="No image">
+				<img src="no_image.png" class="thumbnail" alt="" onerror="this.onerror = null; this.src='no_image.png';">
 			</div>
 		</div>
 	</div>
@@ -31,7 +32,7 @@
 				<h3 style="width:100%; height:100%; " class="text">Title</h3>
 			</div>
 			<div style="width:100%; height:50%; padding:0; margin:0;">
-				<img src="arttra.webp" class="thumbnail" alt="No image">
+				<img src="no_image.png" class="thumbnail" alt="" onerror="this.onerror = null; this.src='no_image.png';">
 			</div>
 		</div>
 	</div>
@@ -41,7 +42,7 @@
 				<h3 style="width:100%; height:100%; " class="text">Title</h3>
 			</div>
 			<div style="width:100%; height:50%; padding:0; margin:0;">
-				<img src="arttra.webp" class="thumbnail" alt="No image">
+				<img src="no_image.png" class="thumbnail" alt="" onerror="this.onerror = null; this.src='no_image.png';">
 			</div>
 		</div>	
 	</div>
@@ -51,38 +52,38 @@
 				<h3 class="text">Title</h3>
 			</div>
 			<div style="width:50%; height:100%; padding:0; margin:0;">
-				<img src="arttra.webp" class="thumbnail" alt="No image">
+				<img src="no_image.png" class="thumbnail" alt="" onerror="this.onerror = null; this.src='no_image.png';">
 			</div>
 		</div>
 	</div>
 
-	<div id="imagebox0" class="imagebox droppy">
+	<div id="imagebox0" class="imagebox droppy" style="background-color: #FFFFFF;">
 		<div style="width:100%; height:100%; padding:0; margin:0;">
-			<img src="dragdrop.png" class="thumbnail" alt="No image">
+			<img src="dragdrop.png" class="thumbnail" alt="" onerror="this.onerror = null; this.src='no_image.png';">
 		</div>
 	</div>
 
 	<div id="backicon" class="backicon">
 		<div style="width:100%; height:100%; padding:0; margin:0;">
-			<img src="back.png" class="backimg" alt="No image" hidden>
+			<img src="back.png" class="backimg" alt="Back" hidden>
 		</div>
 	</div>
 
 	<div id="imagebox5" class="imagebox draggy">
 		<div style="width:100%; height:100%; padding:0; margin:0; pointer-events: none;">
-			<img src="arttra.webp" class="thumbnail" alt="No image">
+			<img src="no_image.png" class="thumbnail" alt="" onerror="this.onerror = null; this.src='no_image.png';">
 		</div>
 	</div>
 
 	<div id="imagebox6" class="imagebox draggy">
 		<div style="width:100%; height:100%; padding:0; margin:0; pointer-events: none;">
-			<img src="arttra.webp" class="thumbnail" alt="No image">
+			<img src="no_image.png" class="thumbnail" alt="" onerror="this.onerror = null; this.src='no_image.png';">
 		</div>
 	</div>
 
 	<div id="imagebox7" class="imagebox draggy">
 		<div style="width:100%; height:100%; padding:0; margin:0; pointer-events: none;">
-			<img src="arttra.webp" class="thumbnail" alt="No image">
+			<img src="no_image.png" class="thumbnail" alt="" onerror="this.onerror = null; this.src='no_image.png';">
 		</div>
 	</div>
 
@@ -93,7 +94,7 @@
 		<!--
 	    <div style="display: flex; width: 100%; height: 20%;">
 			<div style="width:50%; height:100%; padding:0; margin:0;">
-				<img src="arttra.webp" class="thumbnail" alt="No image">
+				<img src="no_image.png" class="thumbnail" alt="No image">
 			</div>
 			<div class="textbox" style="width:50%; height:100%;">
 				<h3 class="text" id="title">Title</h3>
@@ -105,6 +106,7 @@
 			</div>
 		</div>
 		-->
+		<!--
 		<div style="display: flex; justify-content: space-between;">
 			<p class="text" id="date" style="text-align: left;"></p>
 			<p class="text" id="reference" style="text-align: right;"></p>
@@ -112,17 +114,31 @@
 		<div class="textbox" style="width:100%;">
 			<h3 class="text" id="title">Title</h3>
 		</div>
+		-->
+
+		<div style="width: 100%;">
+			<p class="text" id="date" style="text-align: right;"></p>
+		</div>
+		<div class="textbox" style="width:100%;">
+			<h3 class="text" id="title">Title</h3>
+		</div>
+		<p class="text" id="reference" style="text-align: left;"></p>
 	    <div style="display: flex-algin; width: 100%; padding: 0;">
 			<div class="textbox" style="text-align: justify;">
-				<img src="arttra.webp" class="thumbnail" alt="No image" align="right" style="height:30%; width: 50%; padding:0; margin:3%;">
+				<img src="no_image.png" class="thumbnail" alt="no_image.png" align="left" style="height:30%; width: 50%; padding:0; margin:3%;">
 				<p class="text" id="text">Text</p>
 			</div>
 			<br>
-			<div style="text-align: center; width: 100%; padding: 0;">
-				<a href="" id="link" target="_blank">Link</a>
-				<h3 class="text" id="relation" style="display: block;"></h3>
+			<div style="display: flex; justify-content: space-between; text-align: center; width: 100%; padding: 0;">
+				<div style="width: 100%;">
+					<h3 class="text" id="relation" style="display: block; text-align: left;"></h3>
+				</div>
+				<a href="" id="link" target="_blank" style="text-decoration: none;"><h4 class="displaybutton" style="text-align: center;">display</h4></a>
 			</div>
 		</div>
+	</div>
+
+	<div id="hideallpane" class="hideallpane">
 	</div>
 
 </div>
@@ -132,9 +148,15 @@
 
 <!-- https://www.npmjs.com/package/drag-drop-touch?activeTab=code -->
 <script src="./js/DragDropTouch.js"></script>
-<script src="./js/out.js"></script>
+<script src="./js/out2.js"></script>
 <script src="./js/dynamicheight.js">></script>
 <script src="./js/dragdrop.js"></script>
+
+<script>
+	var hideallpane = document.querySelector("#hideallpane");
+	hideallpane.hidden = true;
+</script>
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5MZW42YNNR"></script>

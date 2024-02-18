@@ -5,8 +5,8 @@ var searching = -1;
 var showing_detail= false;
 
 const num_first_data = 4
-const max_strlen_title = 10
-const max_strlen_text = 180 // em
+const max_strlen_title = 20
+const max_strlen_text = 200 // em
 
 var draggyboxes = document.querySelectorAll("div.draggy");
 draggyboxes = Array.prototype.slice.call(draggyboxes);
